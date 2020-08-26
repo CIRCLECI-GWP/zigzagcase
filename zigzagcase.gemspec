@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Alternates uppercase and lowercase across letters}
   spec.homepage      = "https://github.com/CIRCLECI-GWP/zigzagcase"
   spec.license       = "MIT"
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
