@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "zigzagcase/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "zigzagcase"
+  spec.name          = "zigzagcasy"
   spec.version       = Zigzagcase::VERSION
   spec.authors       = ["Ndagi Stanley"]
   spec.email         = ["ndagis@gmail.com"]
