@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zigzagcase (0.1.0)
+    zigzagcasy (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -16,7 +16,7 @@ DEPENDENCIES
   bundler (~> 1.17)
   minitest (~> 5.0)
   rake (~> 10.0)
-  zigzagcase!
+  zigzagcasy!
 
 BUNDLED WITH
    1.17.2
