@@ -17,6 +17,7 @@ jobs:
     steps:
       - checkout
       - ruby/install-deps
+      - add_ssh_keys
       - run:
           name: Publish gem to Rubygems
           command: bundle exec rake release
