@@ -10,3 +10,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - First release
+
+## [0.1.1] - 2021-09-12
+
+### Added
+
+- Second release
+
+## [0.1.2] - 2021-09-12
+
+### Added
+
+- Third release
