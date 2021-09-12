@@ -11,8 +11,28 @@ jobs:
       - run:
           name: Run tests
           command: bundle exec rake
+  deploy:
+    docker:
+      - image: cimg/ruby:2.7
+    steps:
+      - checkout
+      - ruby/install-deps
+      - run:
+          name: Publish gem to Rubygems
+          command: bundle exec rake release
 workflows:
   version: 2
-  deploy:
+  test-and-deploy:
     jobs:
-      - test
+      - test:
+          filters:
+            tags:
+              only: /.*/
+      - deploy:
+          requires:
+            - test
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
